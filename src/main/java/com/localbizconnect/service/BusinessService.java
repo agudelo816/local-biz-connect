@@ -4,16 +4,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.localbizconnect.model.Business;
-import com.localbizconnect.repository.BusinessRepository;
+//import com.localbizconnect.repository.BusinessRepository;
 
 @Service
 public class BusinessService {
 
-	@Autowired
-	private BusinessRepository businessRepository;
+//	@Autowired
+//	private BusinessRepository businessRepository;
 
-	public Business saveOrUpdateBusiness(Business business) {
-		return this.businessRepository.save(business);
+//	public Business saveOrUpdateBusiness(Business business) {
+//		return this.businessRepository.save(business);
+//	}
+
+	public void saveOrUpdateBusiness() {
+		System.out.println("");
 	}
 
 	// Other methods...
