@@ -12,8 +12,10 @@ public class BusinessController {
     private BusinessService businessService;
 
     @PostMapping("/business")
-    public Business registerOrUpdateBusiness(@RequestBody Business business) {
-        return businessService.saveOrUpdateBusiness(business);
+    public String registerOrUpdateBusiness(@RequestBody Business business) {
+//        return businessService.saveOrUpdateBusiness(business);
+         businessService.saveOrUpdateBusiness();
+         return "";
     }
 
     // Other endpoints...

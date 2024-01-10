@@ -1,20 +1,20 @@
 package com.localbizconnect.model;
 
-import javax.persistence.*;
+//import javax.persistence.*;
 
-@Entity
+//@Entity
 public class LoginAccount {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true)
+//    @Column(unique = true)
     private String email;
 
     private String hashedPassword;
 
-    @OneToOne(mappedBy = "loginAccount")
+//    @OneToOne(mappedBy = "loginAccount")
     private Business business;
 
     // Constructors, Getters, and Setters
