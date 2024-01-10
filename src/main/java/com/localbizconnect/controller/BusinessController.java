@@ -14,7 +14,6 @@ public class BusinessController {
     @PostMapping("/business")
     public String registerOrUpdateBusiness(@RequestBody Business business) {
 //        return businessService.saveOrUpdateBusiness(business);
-         businessService.saveOrUpdateBusiness();
          return "";
     }
 

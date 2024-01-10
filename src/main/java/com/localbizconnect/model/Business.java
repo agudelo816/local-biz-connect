@@ -11,6 +11,6 @@ public class Business {
     private String location;
     private Map<String, String> hoursOfOperation;
     private List<Appointment> appointments;
-    private LoginAccount loginAccount;
+    private LoginRequest loginRequest;
 
 }
